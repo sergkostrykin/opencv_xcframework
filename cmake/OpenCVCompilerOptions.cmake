@@ -323,12 +323,6 @@ endif()
 if(PROJECT_NAME STREQUAL "OpenCV")
   include("${OpenCV_SOURCE_DIR}/cmake/OpenCVCompilerOptimizations.cmake")
 endif()
-if(COMMAND ocv_compiler_optimization_options)
-  ocv_compiler_optimization_options()
-endif()
-if(COMMAND ocv_compiler_optimization_options_finalize)
-  ocv_compiler_optimization_options_finalize()
-endif()
 
 # set default visibility to hidden
 if((CV_GCC OR CV_CLANG)
